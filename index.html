@@ -11,15 +11,21 @@
 
     <!-- Flexbox Styles -->
     <style>
-        /* flex wrap */
-        /* nowrap(default) wrap wrap-reverse */
+        /* justify-content horizontal alignment*/
+        /* flex-start(default) flex-end center  */
+        /* evenly distributed */
+        /* space-between first item start last end   */
+        /* space-around side margins  */
+        /* space-evenly even margins  */
         .container {
             display: flex;
-            /* flex-direction: row; === default*/
-
-            /* flex-wrap: nowrap; */
             flex-wrap: wrap;
-            /* flex-wrap: wrap-reverse; */
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: space-evenly;
+            /* justify-content: center; */
         }
     </style>
 </head>
@@ -33,11 +39,11 @@
         <div class="box box-3">3</div>
         <div class="box box-4">4</div>
         <div class="box box-5">5</div>
+        <!-- <div class="box generic">G</div>
         <div class="box generic">G</div>
         <div class="box generic">G</div>
         <div class="box generic">G</div>
-        <div class="box generic">G</div>
-        <div class="box generic">G</div>
+        <div class="box generic">G</div> -->
     </div>
 </body>
 
