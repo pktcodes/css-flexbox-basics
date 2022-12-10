@@ -11,24 +11,20 @@
 
     <!-- Flexbox Styles -->
     <style>
-        /* align-self */
-        /* Targeting a child/flex-item individually */
+        /* flex-grow all children have flex-grow:0 */
         .container {
             display: flex;
-            height: 50vh;
-            align-items: center;
         }
 
-        .box-5 {
-            align-self: flex-start;
-        }
-
-        .box-3 {
-            align-self: stretch;
-        }
-
+        /* .box {
+            flex-grow: 1;
+        } */
         .box-1 {
-            align-self: flex-end;
+            flex-grow: 2;
+        }
+
+        .box-2 {
+            flex-grow: 1;
         }
     </style>
 </head>
