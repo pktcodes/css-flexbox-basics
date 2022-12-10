@@ -11,20 +11,15 @@
 
     <!-- Flexbox Styles -->
     <style>
-        /* flex-grow all children have flex-grow:0 */
+        /* flex-shrink all children have flex-shrink:1 */
         .container {
             display: flex;
-        }
-
-        /* .box {
-            flex-grow: 1;
-        } */
-        .box-1 {
-            flex-grow: 2;
+            flex-wrap: wrap;
         }
 
         .box-2 {
-            flex-grow: 1;
+            width: 300px;
+            flex-shrink: 0;
         }
     </style>
 </head>
