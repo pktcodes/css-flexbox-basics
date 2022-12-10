@@ -11,21 +11,23 @@
 
     <!-- Flexbox Styles -->
     <style>
-        /* MAIN AXIS / CROSS AXIS*/
+        /* order ===  all children have order:0*/
+        /* Moving the content using CSS and without touching any html */
         .container {
             display: flex;
-            height: 50vh;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
         }
 
-        .container-1 {
-            border: 5px solid blue;
-            display: flex;
-            flex-direction: column;
-            height: 800px;
-            justify-content: center;
-            align-items: center;
+        .box-1 {
+            order: 2;
+        }
+
+        .box-2 {
+            order: 1;
+        }
+
+        .box-5 {
+            order: -1;
         }
     </style>
 </head>
@@ -44,13 +46,6 @@
         <div class="box generic">G</div>
         <div class="box generic">G</div>
         <div class="box generic">G</div> -->
-    </div>
-    <div class="container-1">
-        <div class="box box-1">1</div>
-        <div class="box box-2">2</div>
-        <div class="box box-3">3</div>
-        <div class="box box-4">4</div>
-        <div class="box box-5">5</div>
     </div>
 </body>
 
