@@ -11,23 +11,24 @@
 
     <!-- Flexbox Styles -->
     <style>
-        /* order ===  all children have order:0*/
-        /* Moving the content using CSS and without touching any html */
+        /* align-self */
+        /* Targeting a child/flex-item individually */
         .container {
             display: flex;
-            flex-direction: column;
-        }
-
-        .box-1 {
-            order: 2;
-        }
-
-        .box-2 {
-            order: 1;
+            height: 50vh;
+            align-items: center;
         }
 
         .box-5 {
-            order: -1;
+            align-self: flex-start;
+        }
+
+        .box-3 {
+            align-self: stretch;
+        }
+
+        .box-1 {
+            align-self: flex-end;
         }
     </style>
 </head>
